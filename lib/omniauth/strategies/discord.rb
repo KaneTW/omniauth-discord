@@ -9,6 +9,12 @@ module OmniAuth
 
       option :name, "discord"
 
+      option :client_options, {
+          :site => 'https://discordapp.com/api',
+          :authorize_url => 'oauth2/authorize',
+          :token_url => 'oauth2/token'
+      }
+
       uid { raw_info['id'] }
 
       info do
