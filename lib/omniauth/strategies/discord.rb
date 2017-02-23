@@ -23,8 +23,9 @@ module OmniAuth
           :username => raw_info['username'],
           :discriminator => raw_info['discriminator'],
           :avatar => raw_info['avatar'],
+          :verified => raw_info['verified'],
           :email => raw_info['email'],
-          :guilds => raw_info['guilds'],
+          :guilds => raw_info['guilds']
         }
       end
 
